@@ -1,0 +1,265 @@
+{
+  "nav": {
+    "home": "Home",
+    "properties": "Properties",
+    "about": "About",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "home": {
+    "hero": {
+      "title": "Discover Your Dream Property",
+      "subtitle": "Contemporary architectural excellence meets timeless design. Explore our curated collection of premium properties.",
+      "viewProperties": "View Properties",
+      "learnMore": "Learn More"
+    },
+    "featured": {
+      "title": "Featured Properties",
+      "subtitle": "Handpicked selection of our finest properties"
+    },
+    "stats": {
+      "title": "Excellence in Numbers",
+      "properties": "Properties Sold",
+      "totalValue": "Total Value",
+      "experience": "Years Experience",
+      "satisfaction": "Client Satisfaction"
+    },
+    "cta": {
+      "title": "Ready to Find Your Perfect Home?",
+      "subtitle": "Let our expert team guide you through every step of your real estate journey.",
+      "button": "Schedule Consultation",
+      "contactUs": "Contact Us"
+    }
+  },
+  "properties": {
+    "title": "Our Properties",
+    "subtitle": "Browse our exclusive collection of premium real estate",
+    "filters": {
+      "all": "All",
+      "sale": "For Sale",
+      "rent": "For Rent",
+      "sortBy": "Sort by",
+      "priceLowHigh": "Price: Low to High",
+      "priceHighLow": "Price: High to Low",
+      "newest": "Newest First"
+    },
+    "card": {
+      "bedrooms": "Bedrooms",
+      "bathrooms": "Bathrooms",
+      "sqft": "sq ft"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Estate & Co.",
+      "subtitle": "Building dreams, creating legacies"
+    },
+    "story": {
+      "title": "Our Story",
+      "content": "Founded in 2010, Estate & Co. has been at the forefront of premium real estate, connecting discerning clients with exceptional properties. Our commitment to excellence and personalized service has made us a trusted name in luxury real estate."
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "subtitle": "Expert professionals dedicated to your success"
+    },
+    "values": {
+      "title": "Our Values",
+      "excellence": {
+        "title": "Excellence",
+        "description": "We maintain the highest standards in every aspect of our service"
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "Transparency and honesty guide all our client relationships"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We leverage cutting-edge technology to enhance your experience"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Get in Touch",
+      "subtitle": "Have a question about a property or want to schedule a viewing? We're here to help you find your dream home."
+    },
+    "form": {
+      "title": "Send us a Message",
+      "name": "Full Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+1 (555) 123-4567",
+      "subject": "Subject",
+      "subjectPlaceholder": "Property Inquiry",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your requirements...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you for your message! We'll get back to you soon.",
+      "required": "*"
+    },
+    "info": {
+      "title": "Contact Information",
+      "subtitle": "Reach out to us through any of the following channels. Our team is ready to assist you with all your real estate needs.",
+      "phone": "Phone",
+      "phoneNumbers": ["+1 (555) 123-4567", "+1 (555) 987-6543"],
+      "email": "Email",
+      "emailAddresses": ["info@luxuryestates.com", "sales@luxuryestates.com"],
+      "office": "Office",
+      "officeAddress": ["123 Luxury Avenue", "Beverly Hills, CA 90210"],
+      "hours": "Hours",
+      "hoursDetails": ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday: 10:00 AM - 4:00 PM", "Sunday: Closed"],
+      "scheduleViewing": {
+        "title": "Schedule a Viewing",
+        "description": "Interested in viewing a property? Contact us to schedule a personalized tour at your convenience.",
+        "callNow": "Call Now"
+      }
+    },
+    "map": {
+      "title": "Visit Our Office",
+      "description": "Find us at our convenient location in the heart of Beverly Hills"
+    }
+  },
+  "footer": {
+    "tagline": "Your trusted partner in premium real estate",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "address": "123 Estate Avenue, Suite 100",
+    "city": "New York, NY 10001",
+    "phone": "+1 (555) 123-4567",
+    "email": "info@estateandco.com",
+    "rights": "All rights reserved."
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "search": {
+    "location": "Location",
+    "propertyType": "Property Type",
+    "apartment": "Apartment",
+    "house": "House",
+    "villa": "Villa",
+    "commercial": "Commercial",
+    "priceRange": "Price Range",
+    "under1M": "Under $1M",
+    "1Mto3M": "$1M - $3M",
+    "3Mto5M": "$3M - $5M",
+    "over5M": "$5M+",
+    "searchProperties": "Search Properties"
+  },
+  "about": {
+    "hero": {
+      "title": "Redefining Real Estate Excellence",
+      "subtitle": "Where architectural vision meets exceptional service"
+    },
+    "story": {
+      "title": "Our Story",
+      "content": "Founded in 2008, Estate & Co. emerged from a simple belief: that exceptional properties deserve exceptional representation. We set out to create a real estate experience that honors both the architectural integrity of each property and the unique vision of every client. Over the past 15 years, we've curated a portfolio of the most distinguished properties across the nation. Our approach combines deep market knowledge with an unwavering commitment to design excellence, ensuring that every transaction reflects our dedication to quality. Today, Estate & Co. stands as a trusted name in luxury real estate, known for our discerning eye, personalized service, and the lasting relationships we build with our clients."
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "subtitle": "Dedicated professionals committed to finding your perfect property"
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "The principles that guide everything we do",
+      "excellence": {
+        "title": "Excellence",
+        "description": "We maintain the highest standards in every property we represent and every service we provide."
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "Honesty and transparency guide every interaction, building trust that lasts beyond the transaction."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We embrace new technologies and approaches to deliver a modern real estate experience."
+      },
+      "commitment": {
+        "title": "Commitment",
+        "description": "Your goals become our mission. We're dedicated to achieving exceptional results for every client."
+      }
+    }
+  },
+  "properties": {
+    "title": "Discover Your Perfect Property",
+    "subtitle": "Browse our curated collection of exceptional properties. Each one carefully selected for its architectural merit and investment potential.",
+    "filters": {
+      "filters": "Filters",
+      "sortBy": "Sort by",
+      "featured": "Featured",
+      "priceLowHigh": "Price: Low to High",
+      "priceHighLow": "Price: High to Low",
+      "propertyType": "Property Type",
+      "allTypes": "All Types",
+      "apartment": "Apartment",
+      "house": "House",
+      "villa": "Villa",
+      "commercial": "Commercial",
+      "status": "Status",
+      "all": "All",
+      "sale": "For Sale",
+      "rent": "For Rent",
+      "priceRange": "Price Range",
+      "allPrices": "All Prices",
+      "under1M": "Under $1M",
+      "1Mto3M": "$1M - $3M",
+      "3Mto5M": "$3M - $5M",
+      "over5M": "$5M+",
+      "minBedrooms": "Min Bedrooms",
+      "any": "Any",
+      "resetFilters": "Reset Filters"
+    },
+    "card": {
+      "forSale": "For Sale",
+      "forRent": "For Rent",
+      "bedrooms": "Bedrooms",
+      "bathrooms": "Bathrooms",
+      "sqft": "sq ft"
+    }
+  },
+  "contactAgent": {
+    "title": "Contact Agent",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "interestedIn": "I'm interested in",
+    "sendMessage": "Send Message"
+  },
+  "language": {
+    "changeLanguage": "Change language",
+    "english": "English",
+    "arabic": "العربية"
+  },
+  "images": {
+    "heroImageAlt": "Luxury property exterior with modern architecture",
+    "aboutImageAlt": "Estate & Co. luxury property showcase"
+  },
+  "footer": {
+    "tagline": "Contemporary architectural excellence. Discover properties that define modern living.",
+    "quickLinks": "Quick Links",
+    "nav": {
+      "home": "Home",
+      "properties": "Properties",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "propertyTypes": {
+      "title": "Property Types",
+      "apartments": "Apartments",
+      "houses": "Houses",
+      "villas": "Villas",
+      "commercial": "Commercial"
+    },
+    "contact": "Contact",
+    "address": "123 Architecture Lane, Design District, NY 10001",
+    "phone": "+1 (555) 123-4567",
+    "email": "hello@estateandco.com",
+    "rights": "All rights reserved."
+  }
+}
