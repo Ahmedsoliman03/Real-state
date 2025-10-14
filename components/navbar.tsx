@@ -42,7 +42,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="font-serif text-2xl font-bold text-foreground">Estate & Co.</span>
+            <span className={`${isScrolled ? "dark:!text-white" : "!text-black"} font-serif text-2xl font-bold text-foreground `}>Estate & Co.</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -52,22 +52,22 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`text-sm dark:text-black font-medium text-foreground/80 hover:text-foreground transition-colors 
-                  ${isScrolled ? " !text-white" : "text-foreground"}`}
+                  ${isScrolled ? " dark:!text-white" : "text-foreground"}`}
               >
                 {link.label}
               </Link>
             ))}
             <div className="flex items-center gap-2">
-              <ThemeToggle />
-              <LanguageSwitcher />
+              <ThemeToggle isScrolled={isScrolled} />
+              <LanguageSwitcher isScrolled={isScrolled} />
             </div>
       
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-2">
-            <ThemeToggle />
-            <LanguageSwitcher />
+            <ThemeToggle isScrolled={isScrolled} />
+            <LanguageSwitcher isScrolled={isScrolled} />
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-foreground"
