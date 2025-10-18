@@ -4,16 +4,19 @@ import { motion } from "framer-motion"
 import { SearchBar } from "@/components/search-bar"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { Hero } from "@/types/homeTypes"
 
-export function HeroSection() {
+export function HeroSection({ content }: { content: Hero }) {
   const t = useTranslations("home.hero")
   const tImages = useTranslations("images")
+  console.log(`${process.env.NEXT_PUBLIC_API_URL}${content.image.url}`);
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/modern-luxury-villa-exterior-with-pool.jpg"
+          src={`${process.env.NEXT_PUBLIC_API_URL}${content.image.url}`}
           alt={tImages("heroImageAlt")}
           fill
           className="object-cover"
@@ -31,7 +34,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-background mb-6 leading-tight text-balance">
-              {t("title")}
+              {/* {t("title")}  */} {content.title}
             </h1>
           </motion.div>
 
@@ -41,7 +44,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-lg md:text-xl text-background/90 mb-12 leading-relaxed max-w-2xl mx-auto"
           >
-            {t("subtitle")}
+            {/* {t("subtitle")}  */} {content.subTitle}
           </motion.p>
 
           {/* <motion.div

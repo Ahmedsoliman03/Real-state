@@ -11,6 +11,7 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Suspense } from "react"
+import QueryProvider from "./providers/QueryProvider"
 
 // Configure Inter for English (Latin)
 const inter = Inter({
@@ -55,11 +56,13 @@ export default async function RootLayout({
       <body className={`font-sans ${inter.variable} ${cairo.variable} ${GeistMono.variable} ${playfair.variable} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <NextIntlClientProvider messages={messages}>
+            <QueryProvider>
             <Suspense fallback={<div>Loading...</div>}>
               <Navbar />
               {children}
               <Footer />
             </Suspense>
+            </QueryProvider>
           </NextIntlClientProvider>
         </ThemeProvider>
         <Analytics />
