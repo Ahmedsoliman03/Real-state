@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { useTranslations } from "next-intl"
+import { usePathname } from "next/navigation"
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -28,6 +29,8 @@ export function Navbar() {
     { href: "/about", label: t("about") },
     { href: "/contact", label: t("contact") },
   ]
+const path = usePathname()
+
 
   return (
     <motion.nav
@@ -42,7 +45,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className={`${isScrolled ? "dark:!text-white" : "!text-black"} font-serif text-2xl font-bold text-foreground `}>Estate & Co.</span>
+            <span className={`${isScrolled || path !== "/" ? "dark:!text-white" : "!text-black"} font-serif text-2xl font-bold text-foreground `}>Estate & Co.</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -52,22 +55,22 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`text-sm dark:text-black font-medium text-foreground/80 hover:text-foreground transition-colors 
-                  ${isScrolled ? " dark:!text-white" : "text-foreground"}`}
+                  ${isScrolled || path !== "/"? " dark:!text-white" : "text-foreground"}`}
               >
                 {link.label}
               </Link>
             ))}
             <div className="flex items-center gap-2">
-              <ThemeToggle isScrolled={isScrolled} />
-              <LanguageSwitcher isScrolled={isScrolled} />
+              <ThemeToggle isScrolled={isScrolled} path={path}/>
+              <LanguageSwitcher isScrolled={isScrolled} path={path}/>
             </div>
       
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-2">
-            <ThemeToggle isScrolled={isScrolled} />
-            <LanguageSwitcher isScrolled={isScrolled} />
+            <ThemeToggle isScrolled={isScrolled} path={""} />
+            <LanguageSwitcher isScrolled={isScrolled} path={""} />
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-foreground"

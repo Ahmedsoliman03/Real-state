@@ -5,8 +5,9 @@ import { Languages } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { useTranslations } from "next-intl"
+import { checkProps } from "./theme-toggle"
 
-export function LanguageSwitcher({isScrolled}: {isScrolled: boolean}) {
+export function LanguageSwitcher({isScrolled , path}: checkProps) {
   const t = useTranslations("language")
   const [currentLocale, setCurrentLocale] = React.useState("en")
 
@@ -31,7 +32,7 @@ export function LanguageSwitcher({isScrolled}: {isScrolled: boolean}) {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon" className="rounded-full">
-          <Languages className={`${isScrolled ? " dark:!text-white" : "!text-black"} h-5 w-5`} />
+          <Languages className={`${isScrolled || path !== "/" ? " dark:!text-white" : "!text-black"} h-5 w-5`} />
           <span className="sr-only">{t("changeLanguage")}</span>
         </Button>
       </DropdownMenuTrigger>

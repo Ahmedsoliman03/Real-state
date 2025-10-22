@@ -9,6 +9,7 @@ import { Hero } from "@/types/homeTypes"
 export function HeroSection({ content }: { content: Hero }) {
   const t = useTranslations("home.hero")
   const tImages = useTranslations("images")
+console.log(`${process.env.NEXT_PUBLIC_API_URL}/${content.image.url}`);
 
   
   return (

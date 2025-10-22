@@ -25,7 +25,7 @@ data &&
      <>
     
      <HeroSection content={data?.hero[0]} />
-      <FeaturedProperties />
+      <FeaturedProperties content= {data?.features[0]} />
       <StatsSection />
       <CTASection />
      </>

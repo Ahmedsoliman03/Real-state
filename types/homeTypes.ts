@@ -37,7 +37,7 @@ export interface HomePage {
     id: number;
     title: string;
     subTitle: string;
-    card: Card;
+    card: Card[];
   }
   
   export interface Card {
@@ -49,6 +49,7 @@ export interface HomePage {
     Area: string;
     salery: string;
     Image: ImageFormat;
+    sale: boolean
   }
   
   

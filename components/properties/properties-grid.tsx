@@ -82,7 +82,7 @@ export function PropertiesGrid() {
                   transition={{ duration: 0.5, delay: index * 0.05, ease: "easeOut" }}
                   className="h-full"
                 >
-                  <PropertyCard property={property} />
+                  {/* <PropertyCard property={property} /> */}
                 </motion.div>
               ))}
             </div>
