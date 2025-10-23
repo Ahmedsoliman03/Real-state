@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Bed, Bath, Maximize, MapPin } from "lucide-react"
 import { motion } from "framer-motion"
-import {  Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
 import { useTranslations } from "next-intl"
 import { Card as cardType } from "@/types/homeTypes"
 
@@ -14,25 +14,25 @@ interface PropertyCardProps {
 
 export function PropertyCard({ property }: PropertyCardProps) {
   const t = useTranslations("properties.card")
-  
+
 
   return (
     <Link href={`/properties/1`} className="h-full block">
       <motion.div whileHover={{ y: -8 }} transition={{ duration: 0.3, ease: "easeOut" }} className="h-full">
         <Card className="overflow-hidden border-border hover:shadow-2xl transition-shadow duration-300 group h-full flex flex-col">
           <div className="relative h-64 overflow-hidden flex-shrink-0">
-          {property?.Image?.url && 
-            <Image
-            
- src={`${process.env.NEXT_PUBLIC_API_URL}${property?.Image?.url}`}              alt={property?.title}
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-110"
-            />}
-            { property.sale &&
-            <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold">
-            { t("forSale") }
-            </div>
-}
+            {property?.Image?.url &&
+              <Image
+                src={`${process.env.NEXT_PUBLIC_API_URL}${property?.Image?.url}`}
+                alt={property?.title}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+              />}
+            {property.sale &&
+              <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold">
+                {t("forSale")}
+              </div>
+            }
           </div>
 
           <CardContent className="p-6 flex flex-col flex-grow">
