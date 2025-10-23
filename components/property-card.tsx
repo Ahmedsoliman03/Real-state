@@ -23,6 +23,7 @@ export function PropertyCard({ property }: PropertyCardProps) {
           <div className="relative h-64 overflow-hidden flex-shrink-0">
           {property?.Image?.url && 
             <Image
+            
  src={`${process.env.NEXT_PUBLIC_API_URL}${property?.Image?.url}`}              alt={property?.title}
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-110"
