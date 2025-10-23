@@ -37,7 +37,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "Estate & Co. - Premium Real Estate",
+  title: "Estateo",
   description: "Discover your dream property with Estate & Co. - Contemporary architectural excellence.",
   generator: "v0.app",
 }

@@ -16,15 +16,16 @@ console.log(`${process.env.NEXT_PUBLIC_API_URL}/${content.image.url}`);
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        {content?.image?.url && 
-        <Image
-          src={`${process.env.NEXT_PUBLIC_API_URL}${content?.image?.url}`}
-          alt={tImages("heroImageAlt")}
-          fill
-          className="object-cover"
-          priority
-        />
-}
+  {content?.image && content?.image?.url ? (
+  <Image
+    src={`${process.env.NEXT_PUBLIC_API_URL}${content.image.url}`}
+    alt={tImages("heroImageAlt")}
+    fill
+    className="object-cover"
+    priority
+  />
+) : null}
+
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-background" />
       </div>
 
